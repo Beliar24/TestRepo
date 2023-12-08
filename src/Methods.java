@@ -3,6 +3,7 @@ import java.util.Arrays;
 public class Methods {
 
     public static void main(String[] args) {
+        
 //        int a = getNumber("",30, 40, 50, 70);
 
 //        System.out.println(getTrueOrFalse(10));
