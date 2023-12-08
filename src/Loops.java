@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class Loops {
     public static void main(String[] args) {
 
-
 //        int[] arr = new int[10];
 //        int[] arr2 = new int[] {1, 2, 3, 4, 5, 7, 4, 2, 12, 53, 1};
 //        String[] arr3 = {"Hello", "World", "Java"};
