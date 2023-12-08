@@ -55,7 +55,6 @@ public class Methods {
 //        return a * b * c;
 //    }
 
-
 //    public static Integer getNumber(String text, int ...b) {
 //        int sum = 0;
 //        for (int i = 0; i < b.length; i++) {
