@@ -1,29 +1,39 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
+public class Loops {
     public static void main(String[] args) {
 
 
 //        int[] arr = new int[10];
-        int[] arr2 = new int[] {1, 2, 3, 4, 5, 7, 4, 2, 12, 53, 1};
+//        int[] arr2 = new int[] {1, 2, 3, 4, 5, 7, 4, 2, 12, 53, 1};
 //        String[] arr3 = {"Hello", "World", "Java"};
+
+//        Scanner scanner = new Scanner(System.in);
+//
+//        while (scanner.nextLine().equals("quit")) {
+//            System.out.println("Hello");
+//        }
+
+//        do {
+//            System.out.println("Hello");
+//        } while (scanner.nextLine().equals("quit"));
 
 //        int[][] array = new int[3][3];
 
 
-        for (int i = 0; i < arr2.length - 1; i++) {
-            for (int j = arr2.length - 1; j > i; j--) {
-                if (arr2[j - 1] > arr2[j]) {
-                    int tmp = arr2[j - 1];
-                    arr2[j - 1] = arr2[j];
-                    arr2[j] = tmp;
-                }
-            }
-        }
+//        for (int i = 0; i < arr2.length - 1; i++) {
+//            for (int j = arr2.length - 1; j > i; j--) {
+//                if (arr2[j - 1] > arr2[j]) {
+//                    int tmp = arr2[j - 1];
+//                    arr2[j - 1] = arr2[j];
+//                    arr2[j] = tmp;
+//                }
+//            }
+//        }
 
 
-        System.out.println(Arrays.toString(arr2));
+//        System.out.println(Arrays.toString(arr2));
 
 
 //        for (int number: arr2) {
