@@ -3,6 +3,10 @@ import java.util.Arrays;
 public class Methods {
 
     public static void main(String[] args) {
+
+        something();
+
+
 //        int a = getNumber("",30, 40, 50, 70);
 
 //        System.out.println(getTrueOrFalse(10));
@@ -39,28 +43,40 @@ public class Methods {
 //    }
 
 
-//    public static int getNumber(int a, int b) {
-//        return a + b;
-//    }
-//
-//    public static int getNumber(int a, long b) {
-//        return (int) (b - a);
-//    }
-//
-//    public static int getNumber(int a) {
-//        return a;
-//    }
-//
-//    public static int getNumber(int a, int b, int c) {
-//        return a * b * c;
-//    }
+    public static int getNumber(int a, int b) {
+        return a + b;
+    }
 
-//    public static Integer getNumber(String text, int ...b) {
-//        int sum = 0;
-//        for (int i = 0; i < b.length; i++) {
-//            sum += b[i];
-//        }
-//        return sum;
-//    }
+    public static void getNumber() {
+        System.out.println();
+    }
+
+    public static int getNumber(int a, long b) {
+        return (int) (b - a);
+    }
+
+    public static int getNumber(int a) {
+        return a;
+    }
+
+    public static int getNumber(int a, int b, int c) {
+        return a * b * c;
+    }
+
+    public static Integer getNumber(String text, int ...b) {
+        int sum = 0;
+        for (int i = 0; i < b.length; i++) {
+            sum += b[i];
+        }
+        return sum;
+    }
+
+    public static void something() {
+        int a = getNumber(10, 10);
+
+        int b = getNumber(a, 12L);
+
+        System.out.println(b);
+    }
 
 }
