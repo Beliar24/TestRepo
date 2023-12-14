@@ -1,12 +1,43 @@
+package loops;
+
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class Loops {
-    public static void main(String[] args) {
 
-//        int[] arr = new int[10];
+    public static void main(String[] args) {
+        int[] arr = new int[10];
 //        int[] arr2 = new int[] {1, 2, 3, 4, 5, 7, 4, 2, 12, 53, 1};
-//        String[] arr3 = {"Hello", "World", "Java"};
+//        String[] arr3 = new String[] {"Hello", "World", "Java"};
+//        boolean[] bool = {true, false, true, true};
+//        Cat[] cats = {new Cat(), new Cat()};
+
+        int[] arr1 = {1, 2, 3};
+        int[] arr2 = {4, 5, 6};
+
+        arr2 = Arrays.copyOf(arr1, 20);
+
+        System.out.println(Arrays.toString(arr2));
+
+        int[][] array = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+
+        array[1][2] = 10;
+
+        for (int i = 0 ; i < array.length; i++) {
+            for (int j = 0; j < array[1].length; j++) {
+                if (array[i][j] == 10) {
+                    array[i][j] *= 2;
+                }
+            }
+        }
+
+        System.out.println(Arrays.deepToString(array));
+//        arr[0] = 40;
+//        arr[9] = 100;
+//
+//        System.out.println(arr[9]);
+//        System.out.println(Arrays.toString(arr));
 
 //        Scanner scanner = new Scanner(System.in);
 //
@@ -19,8 +50,8 @@ public class Loops {
 //        } while (scanner.nextLine().equals("quit"));
 
 //        int[][] array = new int[3][3];
-
-
+//
+//
 //        for (int i = 0; i < arr2.length - 1; i++) {
 //            for (int j = arr2.length - 1; j > i; j--) {
 //                if (arr2[j - 1] > arr2[j]) {
@@ -135,9 +166,10 @@ public class Loops {
 //        int b = scanner.nextInt();
 //
 //        if (a > b) {
+//            int abc = 10;
 //            System.out.println("a > b");
 //            if (b >= 1) {
-//                System.out.println("b > 1");
+//                System.out.println("a");
 //            }
 //            System.out.println("end of the first if statement");
 //        } else {
