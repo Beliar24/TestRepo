@@ -1,3 +1,5 @@
+package methods;
+
 import java.util.Arrays;
 
 public class Methods {
