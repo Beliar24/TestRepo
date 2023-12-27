@@ -1,72 +1,73 @@
 package oop.inheratance;
 
-public class Animal {
+public abstract class Animal {
 
-    String name;
-    String age;
-
-    public void sleep() {
-        System.out.println("The animal sleeping");
+    void eat() {
+        System.out.println("The animal is eating");
     }
-
-    public void eat() {
-        System.out.println("The animal eating");
-    }
-
+    abstract void drink();
 }
 
-interface Flyable {
-    void fly();
-
-    default void fall() {
-        System.out.println("animal is falling");
-    }
+abstract class Mammal extends Animal {
 }
 
-interface Swimable {
-    void swim();
-}
+class Dog extends Mammal {
 
-interface Actions extends Swimable, Flyable {
-}
-
-class Dog extends Animal {
-
-}
-
-class Cat extends Animal {
-
-}
-
-class Duck extends Animal implements Actions {
 
     @Override
-    public void fly() {
-        System.out.println("Duck is flying");
-    }
-
-    @Override
-    public void swim() {
-        System.out.println("The duck is swimming");
+    void drink() {
+        System.out.println("The dog is drinking");
     }
 }
 
-class DF extends Duck {
+class Cat extends Mammal {
+
     @Override
-    public void fall() {
-        System.out.println("");
+    void drink() {
+        System.out.println("The cat is drinking");
     }
 }
+
+//abstract class Error {
+//    String statusCode;
+//    String message;
+//
+//    public Error(String statusCode, String message) {
+//        this.statusCode = statusCode;
+//        this.message = message;
+//    }
+//
+//
+//}
+//
+//class ErrorResource extends Error {
+//
+//    public ErrorResource(String statusCode, String message) {
+//        super(statusCode, message);
+//    }
+//
+//    String errorResource;
+//}
+//
+//class ErrorUserCreator extends Error {
+//
+//    public ErrorUserCreator(String statusCode, String message) {
+//        super(statusCode, message);
+//    }
+//
+//}
+
+
 
 class TestAnimal {
     public static void main(String[] args) {
-        Dog dog = new Dog();
-        Cat cat = new Cat();
-        Duck duck = new Duck();
+       Mammal animal = new Dog();
 
-        dog.eat();
-        duck.fly();
-        duck.swim();
+       animal.drink();
+
+       animal = new Cat();
+
+       animal.drink();
     }
 }
 

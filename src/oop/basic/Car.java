@@ -10,6 +10,9 @@ public class Car {
     }
 
     public Car(String engine, String transmission, Integer wheels) {
+        if (wheels < 0) {
+            throw new RuntimeException("Incorrect count of wheels");
+        }
         this.engine = engine;
         this.transmission = transmission;
         this.wheels = wheels;
