@@ -13,7 +13,6 @@ public class Service {
     }
 
 
-
     static void sum(Person person, int amount) {
         int currentSum = person.getAccount().getAmount();
         System.out.println("Current sum before operation - " + currentSum);
